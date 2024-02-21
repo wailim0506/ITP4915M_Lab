@@ -35,6 +35,7 @@
             // 
             this.btnLab1.Location = new System.Drawing.Point(249, 127);
             this.btnLab1.Name = "btnLab1";
+            this.btnLab1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnLab1.Size = new System.Drawing.Size(75, 23);
             this.btnLab1.TabIndex = 0;
             this.btnLab1.Text = "Lab1";
