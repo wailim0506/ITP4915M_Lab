@@ -112,7 +112,7 @@
             this.Controls.Add(this.textBoxNum1);
             this.Controls.Add(this.btnAdd);
             this.Name = "Lab1";
-            this.Text = "s";
+            this.Text = "Lab1";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -52,6 +52,12 @@
     <Compile Include="Lab1\Lab1.Designer.cs">
       <DependentUpon>Lab1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab2\Lab2a.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab2\Lab2a.Designer.cs">
+      <DependentUpon>Lab2a.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Lab1\Lab1.resx">
       <DependentUpon>Lab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab2\Lab2a.resx">
+      <DependentUpon>Lab2a.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -88,5 +97,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
