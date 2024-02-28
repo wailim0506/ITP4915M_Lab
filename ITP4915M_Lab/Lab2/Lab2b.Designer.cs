@@ -31,10 +31,10 @@
             this.lb_EnterName = new System.Windows.Forms.Label();
             this.tb_EnterName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rb_Cloudy = new System.Windows.Forms.RadioButton();
-            this.rb_Rainy = new System.Windows.Forms.RadioButton();
-            this.rb_Snowy = new System.Windows.Forms.RadioButton();
             this.rb_Sunny = new System.Windows.Forms.RadioButton();
+            this.rb_Snowy = new System.Windows.Forms.RadioButton();
+            this.rb_Rainy = new System.Windows.Forms.RadioButton();
+            this.rb_Cloudy = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +52,7 @@
             // 
             this.tb_EnterName.Location = new System.Drawing.Point(281, 35);
             this.tb_EnterName.Name = "tb_EnterName";
-            this.tb_EnterName.Size = new System.Drawing.Size(170, 20);
+            this.tb_EnterName.Size = new System.Drawing.Size(204, 20);
             this.tb_EnterName.TabIndex = 1;
             // 
             // groupBox1
@@ -69,27 +69,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Choose";
             // 
-            // rb_Cloudy
+            // rb_Sunny
             // 
-            this.rb_Cloudy.AutoSize = true;
-            this.rb_Cloudy.Location = new System.Drawing.Point(25, 43);
-            this.rb_Cloudy.Name = "rb_Cloudy";
-            this.rb_Cloudy.Size = new System.Drawing.Size(106, 33);
-            this.rb_Cloudy.TabIndex = 0;
-            this.rb_Cloudy.TabStop = true;
-            this.rb_Cloudy.Text = "Cloudy";
-            this.rb_Cloudy.UseVisualStyleBackColor = true;
-            // 
-            // rb_Rainy
-            // 
-            this.rb_Rainy.AutoSize = true;
-            this.rb_Rainy.Location = new System.Drawing.Point(25, 82);
-            this.rb_Rainy.Name = "rb_Rainy";
-            this.rb_Rainy.Size = new System.Drawing.Size(91, 33);
-            this.rb_Rainy.TabIndex = 1;
-            this.rb_Rainy.TabStop = true;
-            this.rb_Rainy.Text = "Rainy";
-            this.rb_Rainy.UseVisualStyleBackColor = true;
+            this.rb_Sunny.AutoSize = true;
+            this.rb_Sunny.Location = new System.Drawing.Point(25, 160);
+            this.rb_Sunny.Name = "rb_Sunny";
+            this.rb_Sunny.Size = new System.Drawing.Size(97, 33);
+            this.rb_Sunny.TabIndex = 3;
+            this.rb_Sunny.TabStop = true;
+            this.rb_Sunny.Text = "Sunny";
+            this.rb_Sunny.UseVisualStyleBackColor = true;
             // 
             // rb_Snowy
             // 
@@ -102,16 +91,27 @@
             this.rb_Snowy.Text = "Snowy";
             this.rb_Snowy.UseVisualStyleBackColor = true;
             // 
-            // rb_Sunny
+            // rb_Rainy
             // 
-            this.rb_Sunny.AutoSize = true;
-            this.rb_Sunny.Location = new System.Drawing.Point(25, 160);
-            this.rb_Sunny.Name = "rb_Sunny";
-            this.rb_Sunny.Size = new System.Drawing.Size(97, 33);
-            this.rb_Sunny.TabIndex = 3;
-            this.rb_Sunny.TabStop = true;
-            this.rb_Sunny.Text = "Sunny";
-            this.rb_Sunny.UseVisualStyleBackColor = true;
+            this.rb_Rainy.AutoSize = true;
+            this.rb_Rainy.Location = new System.Drawing.Point(25, 82);
+            this.rb_Rainy.Name = "rb_Rainy";
+            this.rb_Rainy.Size = new System.Drawing.Size(91, 33);
+            this.rb_Rainy.TabIndex = 1;
+            this.rb_Rainy.TabStop = true;
+            this.rb_Rainy.Text = "Rainy";
+            this.rb_Rainy.UseVisualStyleBackColor = true;
+            // 
+            // rb_Cloudy
+            // 
+            this.rb_Cloudy.AutoSize = true;
+            this.rb_Cloudy.Location = new System.Drawing.Point(25, 43);
+            this.rb_Cloudy.Name = "rb_Cloudy";
+            this.rb_Cloudy.Size = new System.Drawing.Size(106, 33);
+            this.rb_Cloudy.TabIndex = 0;
+            this.rb_Cloudy.TabStop = true;
+            this.rb_Cloudy.Text = "Cloudy";
+            this.rb_Cloudy.UseVisualStyleBackColor = true;
             // 
             // Lab2b
             // 
