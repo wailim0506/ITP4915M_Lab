@@ -107,7 +107,7 @@
             // rbt_visa
             // 
             this.rbt_visa.AutoSize = true;
-            this.rbt_visa.Location = new System.Drawing.Point(0, 44);
+            this.rbt_visa.Location = new System.Drawing.Point(6, 44);
             this.rbt_visa.Name = "rbt_visa";
             this.rbt_visa.Size = new System.Drawing.Size(83, 33);
             this.rbt_visa.TabIndex = 0;
@@ -119,7 +119,7 @@
             // rbt_master
             // 
             this.rbt_master.AutoSize = true;
-            this.rbt_master.Location = new System.Drawing.Point(0, 85);
+            this.rbt_master.Location = new System.Drawing.Point(6, 85);
             this.rbt_master.Name = "rbt_master";
             this.rbt_master.Size = new System.Drawing.Size(104, 33);
             this.rbt_master.TabIndex = 1;
