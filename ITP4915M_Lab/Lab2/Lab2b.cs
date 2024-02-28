@@ -47,5 +47,10 @@ namespace ITP4915M_Lab.Lab2
             pic.Visible = true;
             lb_Message.Text = $"It’s going to be a {weather} day today, {lb_Message.Text}.";
         }
+
+        private void Lab2b_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

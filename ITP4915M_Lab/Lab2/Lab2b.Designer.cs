@@ -190,6 +190,7 @@
             this.Controls.Add(this.lb_EnterName);
             this.Name = "Lab2b";
             this.Text = "Lab2b";
+            this.Load += new System.EventHandler(this.Lab2b_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Cloudy)).EndInit();
