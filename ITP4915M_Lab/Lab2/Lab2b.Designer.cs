@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lab2b));
             this.lb_EnterName = new System.Windows.Forms.Label();
             this.tb_EnterName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -35,7 +36,15 @@
             this.rb_Snowy = new System.Windows.Forms.RadioButton();
             this.rb_Rainy = new System.Windows.Forms.RadioButton();
             this.rb_Cloudy = new System.Windows.Forms.RadioButton();
+            this.picCloudy = new System.Windows.Forms.PictureBox();
+            this.pic_Snowy = new System.Windows.Forms.PictureBox();
+            this.pic_Sunny = new System.Windows.Forms.PictureBox();
+            this.picRainy = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCloudy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Snowy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Sunny)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRainy)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_EnterName
@@ -113,11 +122,55 @@
             this.rb_Cloudy.Text = "Cloudy";
             this.rb_Cloudy.UseVisualStyleBackColor = true;
             // 
+            // picCloudy
+            // 
+            this.picCloudy.Image = ((System.Drawing.Image)(resources.GetObject("picCloudy.Image")));
+            this.picCloudy.Location = new System.Drawing.Point(338, 92);
+            this.picCloudy.Name = "picCloudy";
+            this.picCloudy.Size = new System.Drawing.Size(64, 64);
+            this.picCloudy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picCloudy.TabIndex = 3;
+            this.picCloudy.TabStop = false;
+            // 
+            // pic_Snowy
+            // 
+            this.pic_Snowy.Image = ((System.Drawing.Image)(resources.GetObject("pic_Snowy.Image")));
+            this.pic_Snowy.Location = new System.Drawing.Point(338, 170);
+            this.pic_Snowy.Name = "pic_Snowy";
+            this.pic_Snowy.Size = new System.Drawing.Size(64, 64);
+            this.pic_Snowy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pic_Snowy.TabIndex = 4;
+            this.pic_Snowy.TabStop = false;
+            // 
+            // pic_Sunny
+            // 
+            this.pic_Sunny.Image = ((System.Drawing.Image)(resources.GetObject("pic_Sunny.Image")));
+            this.pic_Sunny.Location = new System.Drawing.Point(421, 170);
+            this.pic_Sunny.Name = "pic_Sunny";
+            this.pic_Sunny.Size = new System.Drawing.Size(64, 64);
+            this.pic_Sunny.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pic_Sunny.TabIndex = 5;
+            this.pic_Sunny.TabStop = false;
+            // 
+            // picRainy
+            // 
+            this.picRainy.Image = ((System.Drawing.Image)(resources.GetObject("picRainy.Image")));
+            this.picRainy.Location = new System.Drawing.Point(421, 92);
+            this.picRainy.Name = "picRainy";
+            this.picRainy.Size = new System.Drawing.Size(64, 64);
+            this.picRainy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picRainy.TabIndex = 6;
+            this.picRainy.TabStop = false;
+            // 
             // Lab2b
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.picRainy);
+            this.Controls.Add(this.pic_Sunny);
+            this.Controls.Add(this.pic_Snowy);
+            this.Controls.Add(this.picCloudy);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tb_EnterName);
             this.Controls.Add(this.lb_EnterName);
@@ -125,6 +178,10 @@
             this.Text = "Lab2b";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCloudy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Snowy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Sunny)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRainy)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,5 +196,9 @@
         private System.Windows.Forms.RadioButton rb_Snowy;
         private System.Windows.Forms.RadioButton rb_Rainy;
         private System.Windows.Forms.RadioButton rb_Cloudy;
+        private System.Windows.Forms.PictureBox picCloudy;
+        private System.Windows.Forms.PictureBox pic_Snowy;
+        private System.Windows.Forms.PictureBox pic_Sunny;
+        private System.Windows.Forms.PictureBox picRainy;
     }
 }
