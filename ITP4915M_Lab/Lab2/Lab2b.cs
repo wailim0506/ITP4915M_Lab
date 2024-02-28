@@ -20,39 +20,32 @@ namespace ITP4915M_Lab.Lab2
 
         private void rb_Cloudy_CheckedChanged(object sender, EventArgs e)
         {
-            pic_Cloudy.Visible = true;
-            pic_Rainy.Visible = false;
-            pic_Snowy.Visible = false;
-            pic_Sunny.Visible = false;
-            lb_Message.Text = $"It’s going to be a cloudy day today, {lb_Message.Text}.";
+            resetPic("Cloudy", pic_Cloudy);
 
         }
 
         private void rb_Rainy_CheckedChanged(object sender, EventArgs e)
         {
-            pic_Cloudy.Visible = false;
-            pic_Rainy.Visible = true;
-            pic_Snowy.Visible = false;
-            pic_Sunny.Visible = false;
-            lb_Message.Text = $"It’s going to be a rainy day today, {lb_Message.Text}.";
+            resetPic("Rainy", pic_Rainy);
         }
 
         private void rb_Snowy_CheckedChanged(object sender, EventArgs e)
         {
-            pic_Cloudy.Visible = false;
-            pic_Rainy.Visible = false;
-            pic_Snowy.Visible = true;
-            pic_Sunny.Visible = false;
-            lb_Message.Text = $"It’s going to be a snowy day today, {lb_Message.Text}.";
+            resetPic("Snowy", pic_Snowy);
         }
 
         private void rb_Sunny_CheckedChanged(object sender, EventArgs e)
         {
+            resetPic("Sunny", pic_Sunny);
+        }
+
+        private void resetPic(String weather, PictureBox pic) {
             pic_Cloudy.Visible = false;
             pic_Rainy.Visible = false;
             pic_Snowy.Visible = false;
-            pic_Sunny.Visible = true;
-            lb_Message.Text = $"It’s going to be a sunny day today, {lb_Message.Text}."; //
+            pic_Sunny.Visible = false;
+            pic.Visible = true;
+            lb_Message.Text = $"It’s going to be a {weather} day today, {lb_Message.Text}.";
         }
     }
 }
