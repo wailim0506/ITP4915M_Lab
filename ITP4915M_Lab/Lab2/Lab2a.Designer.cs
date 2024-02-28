@@ -78,6 +78,7 @@
             this.rbt_WhiteWine.TabStop = true;
             this.rbt_WhiteWine.Text = "White Wine ($180)";
             this.rbt_WhiteWine.UseVisualStyleBackColor = true;
+            this.rbt_WhiteWine.CheckedChanged += new System.EventHandler(this.rbt_WhiteWine_CheckedChanged);
             // 
             // rbt_Beer
             // 
@@ -89,6 +90,7 @@
             this.rbt_Beer.TabStop = true;
             this.rbt_Beer.Text = "Beer 1 dozen ($75)";
             this.rbt_Beer.UseVisualStyleBackColor = true;
+            this.rbt_Beer.CheckedChanged += new System.EventHandler(this.rbt_Beer_CheckedChanged);
             // 
             // groupBox_PaymentMethod
             // 
@@ -112,6 +114,7 @@
             this.rbt_visa.TabStop = true;
             this.rbt_visa.Text = "VISA";
             this.rbt_visa.UseVisualStyleBackColor = true;
+            this.rbt_visa.CheckedChanged += new System.EventHandler(this.rbt_visa_CheckedChanged);
             // 
             // rbt_master
             // 
@@ -123,6 +126,7 @@
             this.rbt_master.TabStop = true;
             this.rbt_master.Text = "Master";
             this.rbt_master.UseVisualStyleBackColor = true;
+            this.rbt_master.CheckedChanged += new System.EventHandler(this.rbt_master_CheckedChanged);
             // 
             // lb_Qty
             // 
@@ -155,6 +159,7 @@
             // lb_Result
             // 
             this.lb_Result.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lb_Result.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Result.Location = new System.Drawing.Point(12, 221);
             this.lb_Result.Name = "lb_Result";
             this.lb_Result.Size = new System.Drawing.Size(575, 75);
