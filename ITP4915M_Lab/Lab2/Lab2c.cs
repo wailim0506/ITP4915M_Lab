@@ -38,6 +38,7 @@ namespace ITP4915M_Lab.Lab2
         private void btn_Add_Click(object sender, EventArgs e)
         {
             lst_Student.Items.Add("Test");
+            lb_Message.Text = "The following item is added: ";
         }
 
         private void lst_Student_SelectedIndexChanged(object sender, EventArgs e)
