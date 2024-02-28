@@ -64,6 +64,12 @@
     <Compile Include="Lab2\Lab2a.Designer.cs">
       <DependentUpon>Lab2a.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab2\Lab2c.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab2\Lab2c.Designer.cs">
+      <DependentUpon>Lab2c.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
