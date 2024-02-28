@@ -52,7 +52,7 @@ namespace ITP4915M_Lab.Lab2
             pic_Rainy.Visible = false;
             pic_Snowy.Visible = false;
             pic_Sunny.Visible = true;
-            lb_Message.Text = $"It’s going to be a sunny day today, {lb_Message.Text}.";
+            lb_Message.Text = $"It’s going to be a sunny day today, {lb_Message.Text}."; 
         }
     }
 }
