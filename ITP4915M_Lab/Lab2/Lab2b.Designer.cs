@@ -36,15 +36,16 @@
             this.rb_Snowy = new System.Windows.Forms.RadioButton();
             this.rb_Rainy = new System.Windows.Forms.RadioButton();
             this.rb_Cloudy = new System.Windows.Forms.RadioButton();
-            this.picCloudy = new System.Windows.Forms.PictureBox();
+            this.pic_Cloudy = new System.Windows.Forms.PictureBox();
             this.pic_Snowy = new System.Windows.Forms.PictureBox();
             this.pic_Sunny = new System.Windows.Forms.PictureBox();
-            this.picRainy = new System.Windows.Forms.PictureBox();
+            this.pic_Rainy = new System.Windows.Forms.PictureBox();
+            this.lb_Message = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCloudy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Cloudy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Snowy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Sunny)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picRainy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Rainy)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_EnterName
@@ -88,6 +89,7 @@
             this.rb_Sunny.TabStop = true;
             this.rb_Sunny.Text = "Sunny";
             this.rb_Sunny.UseVisualStyleBackColor = true;
+            this.rb_Sunny.CheckedChanged += new System.EventHandler(this.rb_Sunny_CheckedChanged);
             // 
             // rb_Snowy
             // 
@@ -99,6 +101,7 @@
             this.rb_Snowy.TabStop = true;
             this.rb_Snowy.Text = "Snowy";
             this.rb_Snowy.UseVisualStyleBackColor = true;
+            this.rb_Snowy.CheckedChanged += new System.EventHandler(this.rb_Snowy_CheckedChanged);
             // 
             // rb_Rainy
             // 
@@ -110,6 +113,7 @@
             this.rb_Rainy.TabStop = true;
             this.rb_Rainy.Text = "Rainy";
             this.rb_Rainy.UseVisualStyleBackColor = true;
+            this.rb_Rainy.CheckedChanged += new System.EventHandler(this.rb_Rainy_CheckedChanged);
             // 
             // rb_Cloudy
             // 
@@ -121,21 +125,22 @@
             this.rb_Cloudy.TabStop = true;
             this.rb_Cloudy.Text = "Cloudy";
             this.rb_Cloudy.UseVisualStyleBackColor = true;
+            this.rb_Cloudy.CheckedChanged += new System.EventHandler(this.rb_Cloudy_CheckedChanged);
             // 
-            // picCloudy
+            // pic_Cloudy
             // 
-            this.picCloudy.Image = ((System.Drawing.Image)(resources.GetObject("picCloudy.Image")));
-            this.picCloudy.Location = new System.Drawing.Point(338, 92);
-            this.picCloudy.Name = "picCloudy";
-            this.picCloudy.Size = new System.Drawing.Size(64, 64);
-            this.picCloudy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picCloudy.TabIndex = 3;
-            this.picCloudy.TabStop = false;
+            this.pic_Cloudy.Image = ((System.Drawing.Image)(resources.GetObject("pic_Cloudy.Image")));
+            this.pic_Cloudy.Location = new System.Drawing.Point(277, 105);
+            this.pic_Cloudy.Name = "pic_Cloudy";
+            this.pic_Cloudy.Size = new System.Drawing.Size(64, 64);
+            this.pic_Cloudy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pic_Cloudy.TabIndex = 3;
+            this.pic_Cloudy.TabStop = false;
             // 
             // pic_Snowy
             // 
             this.pic_Snowy.Image = ((System.Drawing.Image)(resources.GetObject("pic_Snowy.Image")));
-            this.pic_Snowy.Location = new System.Drawing.Point(338, 170);
+            this.pic_Snowy.Location = new System.Drawing.Point(277, 183);
             this.pic_Snowy.Name = "pic_Snowy";
             this.pic_Snowy.Size = new System.Drawing.Size(64, 64);
             this.pic_Snowy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -145,32 +150,41 @@
             // pic_Sunny
             // 
             this.pic_Sunny.Image = ((System.Drawing.Image)(resources.GetObject("pic_Sunny.Image")));
-            this.pic_Sunny.Location = new System.Drawing.Point(421, 170);
+            this.pic_Sunny.Location = new System.Drawing.Point(360, 183);
             this.pic_Sunny.Name = "pic_Sunny";
             this.pic_Sunny.Size = new System.Drawing.Size(64, 64);
             this.pic_Sunny.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pic_Sunny.TabIndex = 5;
             this.pic_Sunny.TabStop = false;
             // 
-            // picRainy
+            // pic_Rainy
             // 
-            this.picRainy.Image = ((System.Drawing.Image)(resources.GetObject("picRainy.Image")));
-            this.picRainy.Location = new System.Drawing.Point(421, 92);
-            this.picRainy.Name = "picRainy";
-            this.picRainy.Size = new System.Drawing.Size(64, 64);
-            this.picRainy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picRainy.TabIndex = 6;
-            this.picRainy.TabStop = false;
+            this.pic_Rainy.Image = ((System.Drawing.Image)(resources.GetObject("pic_Rainy.Image")));
+            this.pic_Rainy.Location = new System.Drawing.Point(360, 105);
+            this.pic_Rainy.Name = "pic_Rainy";
+            this.pic_Rainy.Size = new System.Drawing.Size(64, 64);
+            this.pic_Rainy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pic_Rainy.TabIndex = 6;
+            this.pic_Rainy.TabStop = false;
+            // 
+            // lb_Message
+            // 
+            this.lb_Message.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lb_Message.Location = new System.Drawing.Point(17, 368);
+            this.lb_Message.Name = "lb_Message";
+            this.lb_Message.Size = new System.Drawing.Size(468, 73);
+            this.lb_Message.TabIndex = 7;
             // 
             // Lab2b
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.picRainy);
+            this.ClientSize = new System.Drawing.Size(501, 450);
+            this.Controls.Add(this.lb_Message);
+            this.Controls.Add(this.pic_Rainy);
             this.Controls.Add(this.pic_Sunny);
             this.Controls.Add(this.pic_Snowy);
-            this.Controls.Add(this.picCloudy);
+            this.Controls.Add(this.pic_Cloudy);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tb_EnterName);
             this.Controls.Add(this.lb_EnterName);
@@ -178,10 +192,10 @@
             this.Text = "Lab2b";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCloudy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Cloudy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Snowy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Sunny)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picRainy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Rainy)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,9 +210,10 @@
         private System.Windows.Forms.RadioButton rb_Snowy;
         private System.Windows.Forms.RadioButton rb_Rainy;
         private System.Windows.Forms.RadioButton rb_Cloudy;
-        private System.Windows.Forms.PictureBox picCloudy;
+        private System.Windows.Forms.PictureBox pic_Cloudy;
         private System.Windows.Forms.PictureBox pic_Snowy;
         private System.Windows.Forms.PictureBox pic_Sunny;
-        private System.Windows.Forms.PictureBox picRainy;
+        private System.Windows.Forms.PictureBox pic_Rainy;
+        private System.Windows.Forms.Label lb_Message;
     }
 }
