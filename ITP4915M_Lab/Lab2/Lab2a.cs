@@ -16,5 +16,25 @@ namespace ITP4915M_Lab.Lab2
         {
             InitializeComponent();
         }
+
+        private void Lab2a_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbt_RedWine_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Calculate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_Result_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
