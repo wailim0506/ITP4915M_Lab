@@ -40,5 +40,17 @@ namespace ITP4915M_Lab
             Lab2.Lab2c lab2c = new Lab2.Lab2c();
             lab2c.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Lab3.Lab3a lab3a = new Lab3.Lab3a();
+            lab3a.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Lab3.Lab3b lab3b = new Lab3.Lab3b();
+            lab3b.ShowDialog();
+        }
     }
 }
