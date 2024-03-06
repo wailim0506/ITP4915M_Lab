@@ -16,8 +16,8 @@ namespace ITP4915M_Lab
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Lab2.Lab2c());
-            //Application.Run(new Menu());
+            //Application.Run(new Lab2.Lab2c());
+            Application.Run(new Menu());
         }
     }
 }
