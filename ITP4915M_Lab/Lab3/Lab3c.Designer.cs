@@ -47,53 +47,57 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(243, 12);
+            this.listBox2.Location = new System.Drawing.Point(220, 12);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(85, 121);
             this.listBox2.TabIndex = 1;
             // 
             // btn_right
             // 
-            this.btn_right.Location = new System.Drawing.Point(132, 12);
+            this.btn_right.Location = new System.Drawing.Point(119, 33);
             this.btn_right.Name = "btn_right";
             this.btn_right.Size = new System.Drawing.Size(75, 23);
             this.btn_right.TabIndex = 2;
             this.btn_right.Text = "-->";
             this.btn_right.UseVisualStyleBackColor = true;
+            this.btn_right.Click += new System.EventHandler(this.btn_right_Click);
             // 
             // btn_left
             // 
-            this.btn_left.Location = new System.Drawing.Point(132, 58);
+            this.btn_left.Location = new System.Drawing.Point(119, 79);
             this.btn_left.Name = "btn_left";
             this.btn_left.Size = new System.Drawing.Size(75, 23);
             this.btn_left.TabIndex = 3;
             this.btn_left.Text = "<--";
             this.btn_left.UseVisualStyleBackColor = true;
+            this.btn_left.Click += new System.EventHandler(this.btn_left_Click);
             // 
             // btn_clear
             // 
-            this.btn_clear.Location = new System.Drawing.Point(225, 152);
+            this.btn_clear.Location = new System.Drawing.Point(202, 148);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(103, 50);
             this.btn_clear.TabIndex = 4;
             this.btn_clear.Text = "Clear Cart";
             this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_count
             // 
-            this.btn_count.Location = new System.Drawing.Point(119, 152);
+            this.btn_count.Location = new System.Drawing.Point(96, 148);
             this.btn_count.Margin = new System.Windows.Forms.Padding(0);
             this.btn_count.Name = "btn_count";
             this.btn_count.Size = new System.Drawing.Size(103, 50);
             this.btn_count.TabIndex = 5;
             this.btn_count.Text = "Count Shop + Cart";
             this.btn_count.UseVisualStyleBackColor = true;
+            this.btn_count.Click += new System.EventHandler(this.btn_count_Click);
             // 
             // Lab3c
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(337, 210);
+            this.ClientSize = new System.Drawing.Size(315, 204);
             this.Controls.Add(this.btn_count);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.btn_left);
