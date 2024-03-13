@@ -16,5 +16,16 @@ namespace ITP4915M_Lab.Lab3
         {
             InitializeComponent();
         }
+
+        private void Lab3c_Load(object sender, EventArgs e)
+        {
+            lst_Shop.Items.Add("Apple");
+            lst_Shop.Items.Add("Banana");
+            lst_Shop.Items.Add("Grape");
+            lst_Shop.Items.Add("Orange");
+            lst_Shop.Items.Add("Peach");
+            lst_Shop.Items.Add("Pear");
+            lst_Shop.Items.Add("Pineapple");
+        }
     }
 }

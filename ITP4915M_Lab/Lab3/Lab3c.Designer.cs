@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lst_Shop = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.btn_right = new System.Windows.Forms.Button();
             this.btn_left = new System.Windows.Forms.Button();
@@ -36,25 +36,25 @@
             this.btn_count = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lst_Shop
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(35, 50);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(86, 121);
-            this.listBox1.TabIndex = 0;
+            this.lst_Shop.FormattingEnabled = true;
+            this.lst_Shop.Location = new System.Drawing.Point(12, 12);
+            this.lst_Shop.Name = "lst_Shop";
+            this.lst_Shop.Size = new System.Drawing.Size(86, 121);
+            this.lst_Shop.TabIndex = 0;
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(266, 50);
+            this.listBox2.Location = new System.Drawing.Point(243, 12);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(85, 121);
             this.listBox2.TabIndex = 1;
             // 
             // btn_right
             // 
-            this.btn_right.Location = new System.Drawing.Point(164, 48);
+            this.btn_right.Location = new System.Drawing.Point(132, 12);
             this.btn_right.Name = "btn_right";
             this.btn_right.Size = new System.Drawing.Size(75, 23);
             this.btn_right.TabIndex = 2;
@@ -63,7 +63,7 @@
             // 
             // btn_left
             // 
-            this.btn_left.Location = new System.Drawing.Point(164, 94);
+            this.btn_left.Location = new System.Drawing.Point(132, 58);
             this.btn_left.Name = "btn_left";
             this.btn_left.Size = new System.Drawing.Size(75, 23);
             this.btn_left.TabIndex = 3;
@@ -72,7 +72,7 @@
             // 
             // btn_clear
             // 
-            this.btn_clear.Location = new System.Drawing.Point(248, 198);
+            this.btn_clear.Location = new System.Drawing.Point(225, 152);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(103, 50);
             this.btn_clear.TabIndex = 4;
@@ -81,7 +81,8 @@
             // 
             // btn_count
             // 
-            this.btn_count.Location = new System.Drawing.Point(113, 198);
+            this.btn_count.Location = new System.Drawing.Point(119, 152);
+            this.btn_count.Margin = new System.Windows.Forms.Padding(0);
             this.btn_count.Name = "btn_count";
             this.btn_count.Size = new System.Drawing.Size(103, 50);
             this.btn_count.TabIndex = 5;
@@ -92,22 +93,23 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 289);
+            this.ClientSize = new System.Drawing.Size(337, 210);
             this.Controls.Add(this.btn_count);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.btn_left);
             this.Controls.Add(this.btn_right);
             this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lst_Shop);
             this.Name = "Lab3c";
             this.Text = "Lab3c";
+            this.Load += new System.EventHandler(this.Lab3c_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lst_Shop;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Button btn_right;
         private System.Windows.Forms.Button btn_left;
