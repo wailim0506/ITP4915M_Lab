@@ -69,7 +69,10 @@ namespace ITP4915M_Lab.Lab3
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
-
+            while (listBox2.Items.Count>0)
+            {
+                listBox2.Items.Remove(listBox2.Items[0]);
+            }
         }
     }
 }
